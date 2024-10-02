@@ -1,0 +1,67 @@
+$color_1: #6A6693;
+$color_2: red;
+$background-color_1: #D0D0D0;
+$background-color_2: grey;
+$background-color_3: #FFFFFF;
+
+body {
+	margin: 0;
+}
+.container {
+	.header {
+		background-image: url("../images/header.png");
+		height: 250px;
+		width: 100%;
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: flex-end;
+			li {
+				padding: 10px;
+				font-size: 16px;
+				text-transform: uppercase;
+				cursor: pointer;
+				color: $color_1;
+				&:hover {
+					color: $color_2;
+				}
+			}
+		}
+	}
+	.content {
+		background-color: $background-color_1;
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			li {
+				max-width: 20%;
+				padding: 20px;
+				margin: 10px;
+				text-align: center;
+				background-color: $background-color_2;
+				border-radius: 5px;
+				&:hover {
+					background-color: $background-color_3;
+					cursor: pointer;
+				}
+				.title {
+					font-size: 14px;
+					font-weight: bold;
+				}
+				.description {
+					font-size: 12px;
+					img {
+						width: 200px;
+						height: 200px;
+					}
+				}
+			}
+		}
+	}
+}

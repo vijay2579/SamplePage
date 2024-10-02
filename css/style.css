@@ -1,0 +1,103 @@
+body {
+  margin: 0
+}
+
+.container .header {
+  background-image: url("../images/header.png");
+  height: 250px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.container .header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container .header ul {
+  background-color: #FFFFFF;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.container .header ul li {
+  padding: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #6A6693;
+}
+
+.container .header ul li:hover {
+  /* color: #5A39F6; */
+  color: red;
+}
+
+.container .content {
+  background-color: #D0D0D0;
+}
+
+.container .content ul {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container .content ul li {
+  max-width: 20%;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  background-color: grey;
+  border-radius: 5px;
+  position: relative;
+  color: #FFFFFF;
+}
+.container .content ul li button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  height: 30px;
+  background-color: #00308F;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+.container .content ul li:hover {
+  background-color: #FFFFFF;
+  cursor: pointer;
+  color: #000000;
+}
+.container .content ul li:hover button {
+  background-color: grey;
+}
+.container .content ul li .title {
+  font-size: 14px;
+  font-weight: bold;
+}
+.container .content ul li .description {
+  font-size: 12px;
+}
+.container .content ul li .description img {
+  width: 200px;
+  height: 200px;
+}
+
+.chat img {
+  width: 60px;
+  position: fixed;
+  right: 30px;
+  bottom: 0;
+  cursor: pointer;
+}
